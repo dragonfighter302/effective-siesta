@@ -1,0 +1,415 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@-webkit-keyframes move {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-400px);
+            transform: translateY(-400px);
+  }
+}
+@keyframes move {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-400px);
+            transform: translateY(-400px);
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 25px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: 25px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    top: 50px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    top: 50px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.star {
+  position: absolute;
+  background: #686868;
+  border-radius: 50%;
+  -webkit-animation: move;
+          animation: move;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+​ .type-1 {
+  width: 1px;
+  height: 1px;
+}
+
+.type-2 {
+  width: 2px;
+  height: 2px;
+}
+
+.type-3 {
+  width: 3px;
+  height: 3px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #292e54;
+  background: -webkit-gradient(linear, left bottom, left top, from(#292e54), color-stop(0%, #292e54), color-stop(35%, #21233c), to(#16182a));
+  background: linear-gradient(0deg, #292e54 0%, #292e54 0%, #21233c 35%, #16182a 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: auto;
+}
+
+.github-link {
+  position: absolute;
+  right: 139px;
+  top: 35px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.github-link .github-icon {
+  height: auto;
+  width: 40px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.github-link .github-icon:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  width: 50px;
+}
+
+.about {
+  position: absolute;
+  padding: 70px 220px;
+  -webkit-clip-path: circle(3% at 90% 12%);
+          clip-path: circle(3% at 90% 12%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  right: 150px;
+  top: 60px;
+  z-index: 2;
+}
+
+.about:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.12), 0 3px 18px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, 0.12), 0 3px 18px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  outline: none;
+}
+
+.soon {
+  font-family: "Amatic SC", cursive;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  z-index: 1;
+  margin-top: 100px;
+  -webkit-animation: fadeInDown 1.3s ease-out forwards;
+          animation: fadeInDown 1.3s ease-out forwards;
+  position: relative;
+}
+
+.download-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+  z-index: 1;
+}
+
+.download-links a {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.download-links a:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.download-links a:nth-child(2) {
+  margin-left: 40px;
+}
+
+.download-links a img {
+  height: auto;
+  width: 130px;
+  -webkit-animation: fadeInUp 1.3s ease-out forwards;
+          animation: fadeInUp 1.3s ease-out forwards;
+  position: relative;
+}
+
+.items {
+  position: relative;
+  z-index: 1;
+}
+
+.items > img {
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-animation: fadeIn 1s ease-in forwards;
+          animation: fadeIn 1s ease-in forwards;
+}
+
+.items .bread {
+  height: auto;
+  width: 120px;
+  right: 505px;
+  bottom: 31px;
+}
+
+.items .bread:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  width: 140px;
+}
+
+.items .basketball {
+  height: auto;
+  width: 93px;
+  right: 340px;
+  bottom: 150px;
+}
+
+.items .basketball:hover {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  width: 110px;
+}
+
+.items .chicken {
+  height: auto;
+  width: 146px;
+  right: 63px;
+  bottom: 224px;
+}
+
+.items .chicken:hover {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  width: 160px;
+}
+
+.items .cake {
+  height: auto;
+  width: 72px;
+  right: -146px;
+  bottom: 224px;
+}
+
+.items .cake:hover {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  width: 90px;
+}
+
+.items .tablet {
+  height: auto;
+  width: 72px;
+  right: -370px;
+  bottom: 160px;
+}
+
+.items .tablet:hover {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  width: 100px;
+}
+
+.items .playstation {
+  height: auto;
+  width: 160px;
+  right: -600px;
+  bottom: 7px;
+}
+
+.items .playstation:hover {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  width: 205px;
+}
+
+@media screen and (max-width: 1300px) {
+  .items .bread {
+    right: 350px;
+  }
+  .items .basketball {
+    right: 230px;
+  }
+  .items .chicken {
+    right: 20px;
+  }
+  .items .cake {
+    right: -130px;
+  }
+  .items .tablet {
+    right: -300px;
+  }
+  .items .playstation {
+    right: -455px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .items .bread {
+    right: 229px;
+  }
+  .items .basketball {
+    right: 165px;
+  }
+  .items .chicken {
+    right: 0px;
+  }
+  .items .cake {
+    right: -110px;
+  }
+  .items .tablet {
+    right: -240px;
+  }
+  .items .playstation {
+    right: -349px;
+  }
+  .github-link {
+    right: 60px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .items .bread {
+    right: 30px;
+    bottom: -97px;
+  }
+  .items .basketball {
+    right: 118px;
+    bottom: 140px;
+  }
+  .items .chicken {
+    right: 48px;
+    bottom: 272px;
+    -webkit-transform: rotate(21deg);
+            transform: rotate(21deg);
+  }
+  .items .cake {
+    right: -175px;
+    bottom: 157px;
+  }
+  .items .tablet {
+    right: -34px;
+    bottom: 215px;
+  }
+  .items .playstation {
+    right: -162px;
+    bottom: -170px;
+  }
+  .container .about {
+    right: 33px;
+  }
+  .container .soon {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container .about {
+    padding: 60px 129px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+@import "./keyframes";
+@import "./stars";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #292e54;
+    background: linear-gradient(
+        0deg,
+        rgba(41, 46, 84, 1) 0%,
+        rgba(41, 46, 84, 1) 0%,
+        rgba(33, 35, 60, 1) 35%,
+        rgba(22, 24, 42, 1) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.github-link {
+    position: absolute;
+    right: 139px;
+    top: 35px;
+    transition: 0.7s;
+    .github-icon {
+        height: auto;
+        width: 40px;
+        transition: 0.7s;
+        &:hover {
+            transition: 0.7s;
+            transform: rotate(20deg);
+            width: 50px;
+        }
+    }
+}
+
+.about {
+    position: absolute;
+    padding: 70px 220px;
+    clip-path: circle(3% at 90% 12%);
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    right: 150px;
+    top: 60px;
+    z-index: 2;
+    &:hover {
+        clip-path: circle(75%);
+        border-radius: 20px;
+        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.12), 0 3px 18px rgba(0, 0, 0, 0.08);
+        background: #fff;
+        outline: none;
+    }
+}
+
+.soon {
+    font-family: "Amatic SC", cursive;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    z-index: 1;
+    margin-top: 100px;
+
+    animation: fadeInDown 1.3s ease-out forwards;
+    position: relative;
+}
+
+.download-links {
+    display: flex;
+    margin-top: 80px;
+    z-index: 1;
+    a {
+        transition: transform 0.3s;
+        &:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+        }
+        &:nth-child(2) {
+            margin-left: 40px;
+        }
+        img {
+            height: auto;
+            width: 130px;
+            animation: fadeInUp 1.3s ease-out forwards;
+            position: relative;
+        }
+    }
+}
+
+.items {
+    position: relative;
+    z-index: 1;
+    & > img {
+        position: absolute;
+        align-self: center;
+        transition: 0.7s;
+        animation: fadeIn 1s ease-in forwards;
+    }
+    .bread {
+        height: auto;
+        width: 120px;
+        right: 505px;
+        bottom: 31px;
+        &:hover {
+            transform: rotate(20deg);
+            width: 140px;
+        }
+    }
+    .basketball {
+        height: auto;
+        width: 93px;
+        right: 340px;
+        bottom: 150px;
+        &:hover {
+            transform: rotate(-360deg);
+            width: 110px;
+        }
+    }
+    .chicken {
+        height: auto;
+        width: 146px;
+        right: 63px;
+        bottom: 224px;
+        &:hover {
+            transform: rotate(-20deg);
+            width: 160px;
+        }
+    }
+    .cake {
+        height: auto;
+        width: 72px;
+        right: -146px;
+        bottom: 224px;
+        &:hover {
+            transform: rotate(-10deg);
+            width: 90px;
+        }
+    }
+    .tablet {
+        height: auto;
+        width: 72px;
+        right: -370px;
+        bottom: 160px;
+        &:hover {
+            transform: rotate(-20deg);
+            width: 100px;
+        }
+    }
+    .playstation {
+        height: auto;
+        width: 160px;
+        right: -600px;
+        bottom: 7px;
+        &:hover {
+            transform: rotate(35deg);
+            width: 205px;
+        }
+    }
+}
+
+@import "./media";

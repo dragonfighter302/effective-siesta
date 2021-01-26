@@ -1,0 +1,95 @@
+@media screen and (max-width: 1300px) {
+    .items {
+        .bread {
+            right: 350px;
+        }
+        .basketball {
+            right: 230px;
+        }
+        .chicken {
+            right: 20px;
+        }
+        .cake {
+            right: -130px;
+        }
+        .tablet {
+            right: -300px;
+        }
+        .playstation {
+            right: -455px;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .items {
+        .bread {
+            right: 229px;
+        }
+        .basketball {
+            right: 165px;
+        }
+        .chicken {
+            right: 0px;
+        }
+        .cake {
+            right: -110px;
+        }
+        .tablet {
+            right: -240px;
+        }
+        .playstation {
+            right: -349px;
+        }
+    }
+    .github-link {
+        right: 60px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .items {
+        .bread {
+            right: 30px;
+            bottom: -97px;
+        }
+        .basketball {
+            right: 118px;
+            bottom: 140px;
+        }
+        .chicken {
+            right: 48px;
+            bottom: 272px;
+            transform: rotate(21deg);
+        }
+        .cake {
+            right: -175px;
+            bottom: 157px;
+        }
+        .tablet {
+            right: -34px;
+            bottom: 215px;
+        }
+        .playstation {
+            right: -162px;
+            bottom: -170px;
+        }
+    }
+
+    .container {
+        .about {
+            right: 33px;
+        }
+        .soon {
+            margin-top: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        .about {
+            padding: 60px 129px;
+        }
+    }
+}
