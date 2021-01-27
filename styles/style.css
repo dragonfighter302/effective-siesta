@@ -139,7 +139,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .github-link {
@@ -245,8 +245,8 @@ body {
       align-self: center;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  -webkit-animation: fadeIn 1s ease-in forwards;
-          animation: fadeIn 1s ease-in forwards;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
 }
 
 .items .bread {
@@ -324,7 +324,7 @@ body {
 .items .playstation:hover {
   -webkit-transform: rotate(35deg);
           transform: rotate(35deg);
-  width: 205px;
+  width: 190px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -368,7 +368,7 @@ body {
     right: -349px;
   }
   .github-link {
-    right: 60px;
+    right: 25px;
   }
 }
 
@@ -382,10 +382,7 @@ body {
     bottom: 140px;
   }
   .items .chicken {
-    right: 48px;
-    bottom: 272px;
-    -webkit-transform: rotate(21deg);
-            transform: rotate(21deg);
+    display: none;
   }
   .items .cake {
     right: -175px;

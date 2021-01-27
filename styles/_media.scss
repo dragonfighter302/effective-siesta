@@ -43,7 +43,7 @@
         }
     }
     .github-link {
-        right: 60px;
+        right: 25px;
     }
 }
 
@@ -58,9 +58,10 @@
             bottom: 140px;
         }
         .chicken {
-            right: 48px;
-            bottom: 272px;
-            transform: rotate(21deg);
+            display: none;
+            // right: 48px;
+            // bottom: 272px;
+            // transform: rotate(21deg);
         }
         .cake {
             right: -175px;
